@@ -1,0 +1,84 @@
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="mb-5 text-center">
+                <h1 class="display-5 fw-bold text-info mb-3">User Details</h1>
+                <p class="lead text-muted">Update your personal information below</p>
+            </div>
+            
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-info text-white py-4">
+                    <h2 class="h4 mb-0"><i class="bi bi-person-circle me-2"></i>Personal Information</h2>
+                </div>
+                
+                <div class="card-body p-5">
+                    <form name="userdetails" id="udetails" action="" method="get">
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="firstNameID" class="form-label fw-semibold">First Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="firstNameID" name="firstname" placeholder="Enter your first name" required>
+                                    <div class="form-text">Your real first name</div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="lastNameID" class="form-label fw-semibold">Last Name</label> 
+                                    <input type="text" class="form-control form-control-lg" id="lastNameID" name="lastname" placeholder="Enter your last name" required>
+                                    <div class="form-text">Your real last name</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="dobID" class="form-label fw-semibold">Date of Birth</label> 
+                                    <input type="date" class="form-control form-control-lg" id="dobID" name="dob" required>
+                                    <div class="form-text">Format: MM/DD/YYYY</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top pt-4 mt-4">
+                            <h3 class="h5 fw-bold text-secondary mb-4">
+                                <i class="bi bi-house-door me-2"></i>Address Information
+                            </h3>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="address1ID" class="form-label fw-semibold">Street Address</label> 
+                            <input type="text" class="form-control mb-3" id="address1ID" name="address1" placeholder="123 Main Street" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="address2ID" class="form-label fw-semibold">Apartment, Suite, or Unit</label> 
+                            <input type="text" class="form-control mb-3" id="address2ID" name="address2" placeholder="Apt 4B">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="address3ID" class="form-label fw-semibold">City, State, ZIP Code</label> 
+                            <input type="text" class="form-control" id="address3ID" name="address3" placeholder="New York, NY 10001" required>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+                            <a href="/" class="btn btn-outline-secondary me-md-2 px-4 d-flex align-items-center justify-content-center">Cancel</a>
+                            <input type='submit' value="Update My Details" class="btn btn-primary btn-lg px-5">
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                <div class="card-footer bg-light py-3 text-center">
+                    <small class="text-muted">
+                        <i class="fa-solid fa-shield-alt me-1"></i>
+                        Your information is secure and protected
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="custom-js/userdetails.js"></script>
