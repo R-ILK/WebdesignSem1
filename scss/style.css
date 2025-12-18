@@ -1,0 +1,247 @@
+body {
+  background-color: #d4f1e8;
+  font-family: "Arial", sans-serif;
+  color: #2c3e50;
+}
+
+nav.navbar,
+.navbar {
+  background-color: #5dade2 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: opacity 0.3s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar .btn-link {
+  color: #ffffff !important;
+}
+
+button.btn.btn-primary,
+.btn.btn-primary,
+a.btn.btn-primary {
+  background-color: #7ec4a8 !important;
+  border-color: #7ec4a8 !important;
+  color: #ffffff !important;
+  transition: all 0.3s;
+}
+
+button.btn.btn-primary:hover,
+.btn.btn-primary:hover,
+button.btn.btn-primary:focus,
+.btn.btn-primary:focus,
+button.btn.btn-primary:active,
+.btn.btn-primary:active {
+  background-color: #5fa88a !important;
+  border-color: #5fa88a !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+button.btn.btn-outline-secondary,
+.btn.btn-outline-secondary {
+  border-color: #7ec4a8 !important;
+  color: #7ec4a8 !important;
+  background-color: transparent !important;
+  transition: all 0.3s;
+}
+
+button.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:hover,
+button.btn.btn-outline-secondary:focus,
+.btn.btn-outline-secondary:focus,
+button.btn.btn-outline-secondary:active,
+.btn.btn-outline-secondary:active {
+  background-color: #7ec4a8 !important;
+  border-color: #7ec4a8 !important;
+  color: #ffffff !important;
+}
+
+.card {
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(126, 196, 168, 0.3);
+}
+
+.card .card-body {
+  background-color: #ffffff;
+}
+
+.card .card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card .card-text {
+  color: #7ec4a8 !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.container {
+  background-color: transparent;
+}
+
+main {
+  background-color: #d4f1e8;
+  min-height: calc(100vh - 200px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5fa88a;
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 3px solid #7ec4a8;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2 {
+  color: #7ec4a8 !important;
+  margin-bottom: 20px;
+}
+
+input.form-control,
+select.form-select,
+.form-control,
+.form-select {
+  border: 2px solid #a8e6cf !important;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+input.form-control:focus,
+select.form-select:focus,
+.form-control:focus,
+.form-select:focus {
+  border-color: #7ec4a8 !important;
+  box-shadow: 0 0 0 0.2rem rgba(126, 196, 168, 0.25) !important;
+}
+
+.form-label,
+label.form-label {
+  color: #5fa88a;
+  font-weight: 600;
+}
+
+#cart-items .list-group-item {
+  border: 1px solid #a8e6cf;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  transition: all 0.3s;
+}
+
+#cart-items .list-group-item:hover {
+  background-color: #d4f1e8;
+  border-color: #7ec4a8;
+}
+
+#cart-items .list-group-item img {
+  border: 2px solid #a8e6cf;
+  border-radius: 8px;
+}
+
+#cart-items .list-group-item .text-primary {
+  color: #7ec4a8 !important;
+}
+
+#cart-items .list-group-item .btn-link.text-danger {
+  color: #e74c3c !important;
+}
+
+#cart-items .list-group-item .btn-link.text-danger:hover {
+  color: #c0392b !important;
+}
+
+#subtotal,
+#tax,
+#total,
+#shipping {
+  color: #7ec4a8 !important;
+  font-weight: bold;
+}
+
+#total {
+  font-size: 1.3rem;
+  color: #5fa88a !important;
+}
+
+#products-grid .card {
+  height: 100%;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(126, 196, 168, 0.2) !important;
+}
+
+a {
+  color: #7ec4a8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #5fa88a;
+  text-decoration: underline;
+}
+
+.toast {
+  border: 2px solid #7ec4a8;
+  background-color: #ffffff;
+}
+
+.toast .toast-header {
+  background-color: #a8e6cf;
+  color: #2c3e50;
+  border-bottom: 2px solid #7ec4a8;
+}
+
+.toast .text-success {
+  color: #5fa88a !important;
+}
+
+.text-primary {
+  color: #7ec4a8 !important;
+}
+
+.text-muted {
+  color: #bdc3c7 !important;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  .card-text {
+    font-size: 0.7rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */
