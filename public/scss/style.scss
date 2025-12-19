@@ -1,0 +1,280 @@
+// Variables
+$primary-green: #a8e6cf;
+$secondary-green: #7ec4a8;
+$dark-green: #5fa88a;
+$light-green: #d4f1e8;
+$accent-blue: #5dade2;
+$text-dark: #2c3e50;
+$text-light: #ffffff;
+$gray-light: #ecf0f1;
+$gray-medium: #bdc3c7;
+
+$primary: $secondary-green;
+$secondary: $dark-green;
+$success: $primary-green;
+$info: $accent-blue;
+
+body {
+  background-color: $light-green;
+  font-family: 'Arial', sans-serif;
+  color: $text-dark;
+}
+
+nav.navbar,
+.navbar {
+  background-color: $accent-blue !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: $text-light !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: $text-light !important;
+  transition: opacity 0.3s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar .btn-link {
+  color: $text-light !important;
+}
+
+button.btn.btn-primary,
+.btn.btn-primary,
+a.btn.btn-primary {
+  background-color: $secondary-green !important;
+  border-color: $secondary-green !important;
+  color: $text-light !important;
+  transition: all 0.3s;
+}
+
+button.btn.btn-primary:hover,
+.btn.btn-primary:hover,
+button.btn.btn-primary:focus,
+.btn.btn-primary:focus,
+button.btn.btn-primary:active,
+.btn.btn-primary:active {
+  background-color: $dark-green !important;
+  border-color: $dark-green !important;
+  color: $text-light !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+button.btn.btn-outline-secondary,
+.btn.btn-outline-secondary {
+  border-color: $secondary-green !important;
+  color: $secondary-green !important;
+  background-color: transparent !important;
+  transition: all 0.3s;
+}
+
+button.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:hover,
+button.btn.btn-outline-secondary:focus,
+.btn.btn-outline-secondary:focus,
+button.btn.btn-outline-secondary:active,
+.btn.btn-outline-secondary:active {
+  background-color: $secondary-green !important;
+  border-color: $secondary-green !important;
+  color: $text-light !important;
+}
+
+.card {
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: $text-light;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(126, 196, 168, 0.3);
+}
+
+.card .card-body {
+  background-color: $text-light;
+}
+
+.card .card-title {
+  color: $text-dark;
+  font-weight: 600;
+}
+
+.card .card-text {
+  color: $secondary-green !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.container {
+  background-color: transparent;
+}
+
+main {
+  background-color: $light-green;
+  min-height: calc(100vh - 200px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-green;
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 3px solid $secondary-green;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2 {
+  color: $secondary-green !important;
+  margin-bottom: 20px;
+}
+
+input.form-control,
+select.form-select,
+.form-control,
+.form-select {
+  border: 2px solid $primary-green !important;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+input.form-control:focus,
+select.form-select:focus,
+.form-control:focus,
+.form-select:focus {
+  border-color: $secondary-green !important;
+  box-shadow: 0 0 0 0.2rem rgba(126, 196, 168, 0.25) !important;
+}
+
+.form-label,
+label.form-label {
+  color: $dark-green;
+  font-weight: 600;
+}
+
+#cart-items .list-group-item {
+  border: 1px solid $primary-green;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: $text-light;
+  transition: all 0.3s;
+}
+
+#cart-items .list-group-item:hover {
+  background-color: $light-green;
+  border-color: $secondary-green;
+}
+
+#cart-items .list-group-item img {
+  border: 2px solid $primary-green;
+  border-radius: 8px;
+}
+
+#cart-items .list-group-item .text-primary {
+  color: $secondary-green !important;
+}
+
+#cart-items .list-group-item .btn-link.text-danger {
+  color: #e74c3c !important;
+}
+
+#cart-items .list-group-item .btn-link.text-danger:hover {
+  color: #c0392b !important;
+}
+
+#subtotal, 
+#tax, 
+#total, 
+#shipping {
+  color: $secondary-green !important;
+  font-weight: bold;
+}
+
+#total {
+  font-size: 1.3rem;
+  color: $dark-green !important;
+}
+
+#products-grid .card {
+  height: 100%;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(126, 196, 168, 0.2) !important;
+}
+
+a {
+  color: $secondary-green;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: $dark-green;
+  text-decoration: underline;
+}
+
+.toast {
+  border: 2px solid $secondary-green;
+  background-color: $text-light;
+}
+
+.toast .toast-header {
+  background-color: $primary-green;
+  color: $text-dark;
+  border-bottom: 2px solid $secondary-green;
+}
+
+.toast .text-success {
+  color: $dark-green !important;
+}
+
+.text-primary {
+  color: $secondary-green !important;
+}
+
+.text-muted {
+  color: $gray-medium !important;
+}
+
+hr {
+    color: $dark-green;
+}
+
+footer {
+    div {
+        color: $dark-green;
+    }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  .card-text {
+    font-size: 0.7rem !important; 
+  }
+}
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

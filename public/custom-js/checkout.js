@@ -35,9 +35,13 @@ function displayCartItems() {
                     <div class="col-md-2">
                         <img src="${item.image}" alt="${item.name}" class="img-fluid rounded">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <h6 class="mb-0">${item.name}</h6>
-                        <small class="text-muted">Quantity: ${item.quantity}</small>
+                        <div class="input-group input-group-sm mt-2" style="max-width: 120px;">
+                            <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(${index}, -1)">-</button>
+                            <input type="number" class="form-control text-center no-spinner" value="${item.quantity}" min="1" onchange="setQuantity(${index}, this.value)" id="qty-${index}">
+                            <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(${index}, 1)">+</button>
+                        </div>
                     </div>
                     <div class="col-md-3 text-end">
                         <strong>${item.price}₴</strong>
@@ -79,6 +83,52 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(cart));
     
+    const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    localStorage.setItem('checkout', cartCount);
+    const checkoutElement = document.querySelector('#checkout');
+    if (checkoutElement) {
+        checkoutElement.innerHTML = cartCount;
+    }
+    
+    displayCartItems();
+}
+
+function updateQuantity(index, change) {
+    const cart = loadCart();
+    const newQuantity = cart[index].quantity + change;
+    
+    if (newQuantity < 1) {
+        // If quantity would be 0, remove item instead
+        removeFromCart(index);
+        return;
+    }
+    
+    cart[index].quantity = newQuantity;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    // Update cart count in navbar
+    const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    localStorage.setItem('checkout', cartCount);
+    const checkoutElement = document.querySelector('#checkout');
+    if (checkoutElement) {
+        checkoutElement.innerHTML = cartCount;
+    }
+    
+    displayCartItems();
+}
+
+function setQuantity(index, value) {
+    const quantity = parseInt(value);
+    
+    if (isNaN(quantity) || quantity < 1) {
+        displayCartItems();
+        return;
+    }
+    
+    const cart = loadCart();
+    cart[index].quantity = quantity;
+    localStorage.setItem('cart', JSON.stringify(cart));
+
     const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
     localStorage.setItem('checkout', cartCount);
     const checkoutElement = document.querySelector('#checkout');

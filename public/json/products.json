@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Product Name 1",
-    "price": 10000,
-    "image": "https://placehold.co/300x300"
+    "name": "Painting of Bürger",
+    "price": 34000,
+    "image": "images/paintingDenchik.png"
   },
   {
     "id": 2,
-    "name": "Product Name 2",
+    "name": "Propaganda Poster",
     "price": 15000,
-    "image": "https://placehold.co/300x300"
+    "image": "images/posterArtemka.png"
   },
   {
     "id": 3,
-    "name": "Product Name 3",
+    "name": "Painting of a Man",
     "price": 12000,
-    "image": "https://placehold.co/300x300"
+    "image": "images/paintingRomchik.png"
   },
   {
     "id": 4,
-    "name": "Product Name 4",
+    "name": "Vikings Poster",
     "price": 8000,
-    "image": "https://placehold.co/300x300"
+    "image": "images/vikings.png"
   },
   {
     "id": 5,
-    "name": "Product Name 5",
+    "name": "Propaganda Poster",
     "price": 20000,
-    "image": "https://placehold.co/300x300"
+    "image": "images/posterDenchik.jpg"
   },
   {
     "id": 6,
-    "name": "Product Name 6",
+    "name": "Painting of a Guy",
     "price": 9500,
-    "image": "https://placehold.co/300x300"
+    "image": "images/posterMaxik.png"
   },
   {
     "id": 7,
-    "name": "Product Name 7",
+    "name": "Navy Postmark",
     "price": 11000,
-    "image": "https://placehold.co/300x300"
+    "image": "images/markaArtemka.png"
   },
   {
     "id": 8,
-    "name": "Product Name 8",
+    "name": "Strange Dollar Bill",
     "price": 13500,
-    "image": "https://placehold.co/300x300"
+    "image": "images/dollarBorik.png"
   },
   {
     "id": 9,
-    "name": "Product Name 9",
+    "name": "Photo of Rebel",
     "price": 12500,
-    "image": "https://placehold.co/300x300"
+    "image": "images/photoRomchik.png"
   }
 ]
